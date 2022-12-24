@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "user": "Elon Reeve Musk",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "https://images.pexels.com/photos/13191607/pexels-photo-13191607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 2,
+    "user": "James Bond",
+    "tweets": 700,
+    "followers": 123456,
+    "avatar": "https://images.pexels.com/photos/3965617/pexels-photo-3965617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 3,
+    "user": "John Wick",
+    "tweets": 666,
+    "followers": 66666,
+    "avatar": "https://images.pexels.com/photos/1756157/pexels-photo-1756157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 4,
+    "user": "Volodymyr Zelenskyi",
+    "tweets": 300,
+    "followers": 999999,
+    "avatar": "https://images.pexels.com/photos/3130073/pexels-photo-3130073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 5,
+    "user": "Little Witcher",
+    "tweets": 777,
+    "followers": 9999,
+    "avatar": "https://images.pexels.com/photos/2821112/pexels-photo-2821112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 6,
+    "user": "Leonid Messi",
+    "tweets": 10,
+    "followers": 101010,
+    "avatar": "https://images.pexels.com/photos/3214777/pexels-photo-3214777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  }
+]
