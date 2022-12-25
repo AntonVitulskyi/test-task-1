@@ -6,11 +6,11 @@
 
 .list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  gap: 15px;
+  gap: 30px;
   padding: 15px;
-  border-style: groove;
   width: 100%;
-  background-color: aquamarine;
 }
