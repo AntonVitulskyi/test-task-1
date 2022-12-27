@@ -7,23 +7,27 @@ import styles from '../CardItem/CardItem.module.css';
 
 export default class CardItem extends Component {
   state = {
+    followingCards: JSON.parse(localStorage.getItem('following')) || [],
     followersCount: this.props.followers,
-    isFollowing: this.props.isFollowing ?? false,
   };
 
+  componentDidMount() {
+    if (this.state.followingCards.includes(this.props.id)) {
+      this.setState({ followersCount: this.props.followers + 1 });
+    }
+  }
+
   handleChangeFollowers = () => {
-    const { onClickFollow, id } = this.props;
+    const { followingCards, onClickFollow, id } = this.props;
     onClickFollow(id);
     this.setState(prevState => {
-      if (prevState.isFollowing) {
+      if (followingCards.includes(id)) {
         return {
           followersCount: prevState.followersCount - 1,
-          isFollowing: !prevState.isFollowing,
         };
       }
       return {
         followersCount: prevState.followersCount + 1,
-        isFollowing: !prevState.isFollowing,
       };
     });
   };
@@ -47,10 +51,10 @@ export default class CardItem extends Component {
             <span>{new Intl.NumberFormat('en').format(tweets)} </span>TWEETS
           </p>
           <p className={styles.followers}>
-            <span>
+            <span className={styles.followersNum}>
               {new Intl.NumberFormat('en').format(this.state.followersCount)}
             </span>
-            FOLLOWERS
+             FOLLOWERS
           </p>
           <button
             id={id}
