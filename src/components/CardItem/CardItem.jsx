@@ -29,7 +29,7 @@ export default class CardItem extends Component {
   };
 
   render() {
-    const { id, user, tweets, followers, avatar, followingCards } = this.props;
+    const { id, user, tweets, avatar, followingCards } = this.props;
     return (
       <li className={styles.item}>
         <div className={styles.topContainer}>
