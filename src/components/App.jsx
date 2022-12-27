@@ -30,22 +30,18 @@ export class App extends Component {
     }
   }
 
-  onClickFollow = event => {
+  onClickFollow = itemId => {
     this.setState(prevState => {
-      if (prevState.followingCards.includes(Number(event.target.id))) {
+      if (prevState.followingCards.includes(Number(itemId))) {
         return {
           followingCards: prevState.followingCards.filter(
-            id => id !== Number(event.target.id)
+            id => id !== Number(itemId)
           ),
         };
-      } else if (!prevState.followingCards.includes(Number(event.target.id))) {
-        return {
-          followingCards: [
-            ...prevState.followingCards,
-            Number(event.target.id),
-          ],
-        };
       }
+      return {
+        followingCards: [...prevState.followingCards, Number(itemId)],
+      };
     });
   };
 
